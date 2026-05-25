@@ -160,12 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
             handleInput.placeholder = '@username or instagram.com/username';
             followersLabel.innerHTML = 'Followers Count <span class="req">*</span>';
             followersInput.placeholder = 'e.g. 15,400';
-        } else {
-            // twitch or tiktok
-            handleLabel.innerHTML = `${platform.charAt(0).toUpperCase() + platform.slice(1)} Profile Link / Username <span class="req">*</span>`;
-            handleInput.placeholder = `@yourname or ${platform}.tv/yourname`;
-            followersLabel.innerHTML = 'Followers Count <span class="req">*</span>';
-            followersInput.placeholder = 'e.g. 5,000';
         }
     }
 
