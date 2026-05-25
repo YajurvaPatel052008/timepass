@@ -1,14 +1,12 @@
 // ========================================================
-// BACKEND API ENDPOINT (VERCEL SERVERLESS FUNCTION)
+// BACKEND API ENDPOINT (NETLIFY SERVERLESS FUNCTION)
 // Credentials are kept secure on the backend - never exposed
 // ========================================================
-const API_ENDPOINT = '/api/submit-application';
+const API_ENDPOINT = '/.netlify/functions/submit-application';
 
-// Check if running on Vercel (production) or localhost (development)
-const isProduction = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
-const apiUrl = isProduction 
-    ? `${window.location.origin}${API_ENDPOINT}`
-    : `http://localhost:3000${API_ENDPOINT}`;
+// For local development with Node server, fall back to /api/submit-application
+const isLocalDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+const apiUrl = isLocalDev ? '/api/submit-application' : API_ENDPOINT;
 
 // Special Testlab Access Portal Logic
 document.addEventListener('DOMContentLoaded', () => {

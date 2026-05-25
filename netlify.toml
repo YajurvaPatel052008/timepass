@@ -1,0 +1,12 @@
+[build]
+  command = "echo 'Static site with functions'"
+  functions = "netlify/functions"
+  publish = "."
+
+[context.production]
+  environment = { SUPABASE_URL = "", SUPABASE_ANON_KEY = "" }
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/submit-application"
+  status = 200
