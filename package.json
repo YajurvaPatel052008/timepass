@@ -1,0 +1,21 @@
+{
+  "name": "special-testlab",
+  "version": "1.0.0",
+  "description": "Special Testlab Creator Alpha Access Portal with Supabase",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "static": "http-server -p 3000"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "keywords": ["creator", "alpha", "testlab"],
+  "author": "",
+  "license": "MIT"
+}

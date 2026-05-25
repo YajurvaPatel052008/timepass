@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Testlab // Exclusive Creator Alpha Access Portal</title>
+    <meta name="description" content="Secure your exclusive Alpha Access to the Special Testlab. Register your content creator details (YouTube ID, Instagram ID, and metrics) to join the vanguard.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo" id="logoLink" onclick="location.reload()">
+            <div class="logo-icon">
+                <div class="logo-inner"></div>
+            </div>
+            SPECIAL <span>TESTLAB</span>
+        </div>
+        <div style="font-family: 'Orbitron', sans-serif; font-size: 0.8rem; letter-spacing: 1px; color: var(--neon-cyan); border: 1px solid rgba(0, 240, 255, 0.3); padding: 0.35rem 0.85rem; border-radius: 4px; background: rgba(0, 240, 255, 0.05); text-shadow: 0 0 5px rgba(0, 240, 255, 0.3);">
+            ALPHA GATEWAY
+        </div>
+    </header>
+
+    <!-- Public Portal View -->
+    <div id="portalView">
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="badge" id="appTitleBadge">SYSTEMS ONLINE // ALPHA PHASE 1.0</div>
+                <h1 class="hero-title">
+                    SPECIAL TESTLAB
+                    <span>ALPHA ACCESS GATE</span>
+                </h1>
+                <p class="hero-description">
+                    We are opening the vault gates. Get early build telemetry, custom content tools, and absolute freedom to stream and record before the public launch. Apply below to secure your creative access token.
+                </p>
+                <div class="hero-actions">
+                    <a href="#applySection" class="btn-futuristic btn-primary">Join The Vanguard</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Portal Container -->
+        <main class="main-content" id="applySection">
+            <div class="glass-panel">
+                
+                <!-- Multi-Step Title -->
+                <div class="form-header" id="formHeader">
+                    <h2>CREATOR TRANSMISSION CORE</h2>
+                    <p>Transmit your social telemetry to unlock your exclusive Special Testlab Access key</p>
+                </div>
+
+                <!-- Multi-Step Progress Tracker -->
+                <div class="progress-bar-container">
+                    <div class="progress-bar-line"></div>
+                    <div class="progress-fill"></div>
+                    <div class="progress-step active" data-title="Personal Info">1</div>
+                    <div class="progress-step" data-title="Channels">2</div>
+                    <div class="progress-step" data-title="Secure Pitch">3</div>
+                </div>
+
+                <!-- Form Panel -->
+                <form id="creatorForm" autocomplete="off" onsubmit="event.preventDefault();">
+                    
+                    <!-- STEP 1: Personal Coordinates -->
+                    <div class="form-step active" id="step1">
+                        <div class="form-group-grid">
+                            <div class="form-group full-width">
+                                <label for="name">Creator Name / Alias <span class="req">*</span></label>
+                                <div class="input-container">
+                                    <span class="input-icon">👤</span>
+                                    <input type="text" id="name" class="form-control" placeholder="Enter your creator identity name" required>
+                                </div>
+                                <div class="input-feedback" id="name-feedback"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Communication Email <span class="req">*</span></label>
+                                <div class="input-container">
+                                    <span class="input-icon">📧</span>
+                                    <input type="email" id="email" class="form-control" placeholder="yourname@domain.com" required>
+                                </div>
+                                <div class="input-feedback" id="email-feedback"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Direct Contact Number <span class="req">*</span></label>
+                                <div class="input-container">
+                                    <span class="input-icon">📱</span>
+                                    <input type="tel" id="phone" class="form-control" placeholder="+1 (555) 000-0000" required>
+                                </div>
+                                <div class="input-feedback" id="phone-feedback"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 2: Channel Grid Specifications -->
+                    <div class="form-step" id="step2">
+                        <div class="form-group full-width">
+                            <label>Primary Content Platform <span class="req">*</span></label>
+                            <div class="social-selector-grid">
+                                <div class="social-select-card selected">
+                                    <input type="radio" name="platformRadio" value="youtube" checked>
+                                    <i>▶</i>
+                                    <span>YouTube</span>
+                                </div>
+                                <div class="social-select-card">
+                                    <input type="radio" name="platformRadio" value="instagram">
+                                    <i>📸</i>
+                                    <span>Instagram</span>
+                                </div>
+                                <div class="social-select-card">
+                                    <input type="radio" name="platformRadio" value="twitch">
+                                    <i>🎦</i>
+                                    <span>Twitch</span>
+                                </div>
+                                <div class="social-select-card">
+                                    <input type="radio" name="platformRadio" value="tiktok">
+                                    <i>🎵</i>
+                                    <span>TikTok</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group-grid">
+                            <div class="form-group">
+                                <label id="platformHandleLabel" for="socialId">YouTube Channel Link / Handle <span class="req">*</span></label>
+                                <div class="input-container">
+                                    <span class="input-icon">🔗</span>
+                                    <input type="text" id="socialId" class="form-control" placeholder="youtube.com/@yourchannel" required>
+                                </div>
+                                <div class="input-feedback" id="socialId-feedback"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label id="followersLabel" for="followers">Subscribers Count <span class="req">*</span></label>
+                                <div class="input-container">
+                                    <span class="input-icon">📊</span>
+                                    <input type="text" id="followers" class="form-control" placeholder="e.g. 25,000" required>
+                                </div>
+                                <div class="input-feedback" id="followers-feedback"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3: The Pitch -->
+                    <div class="form-step" id="step3">
+                        <div class="form-group full-width">
+                            <label for="pitch">Why are you excited to secure Special Testlab Access? <span class="req">*</span></label>
+                            <div class="input-container">
+                                <span class="input-icon" style="top: 1rem; transform: none;">📝</span>
+                                <textarea id="pitch" class="form-control" placeholder="Tell us a little bit about your streaming style, past coverage, or your plan for Special Testlab Access alpha gameplay coverage..." required></textarea>
+                            </div>
+                            <div class="input-feedback" id="pitch-feedback"></div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Action Controls -->
+                    <div class="form-buttons">
+                        <button type="button" class="btn-futuristic btn-secondary" id="prevBtn">Back Sector</button>
+                        <button type="button" class="btn-futuristic" id="nextBtn">Next Sector</button>
+                    </div>
+
+                </form>
+
+                <!-- Signup Success Screen -->
+                <div class="success-card" id="successCard">
+                    <div class="success-icon-wrap">✓</div>
+                    <h3>TRANSMISSION SECURED</h3>
+                    <p>Your content creator telemetry has been successfully uplinked to the Special Testlab Alpha Network. Our community management protocol is scanning your metrics.</p>
+                    
+                    <div class="success-ticket">
+                        <div class="ticket-label">ALPHA ACCESS RESERVATION TOKEN</div>
+                        <div class="ticket-code" id="ticketCode">TL-XXXXXX</div>
+                    </div>
+                    
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Keep this reservation token safe. A communications invite will be dispatched to your email address if approved.</p>
+                    <button class="btn-futuristic btn-primary" onclick="location.reload()" style="margin-top: 1rem;">Uplink Another Channel</button>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content" style="justify-content: center; text-align: center;">
+            <div class="footer-text">
+                &copy; 2026 Special Testlab Access Labs. Cyber-Vanguard Access Protocols Approved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Logic Script -->
+    <script src="app.js"></script>
+</body>
+</html>
